@@ -32,6 +32,11 @@ OpenRazer driver common package
 install -m 644 -v -D %{SOURCE1} %{buildroot}%{_udevrulesdir}/99-razer.rules
 install -m 755 -v -D %{SOURCE2} %{buildroot}%{_udevrulesdir}/../razer_mount
 
+%pre
+#!/bin/sh
+set -e
+getent group plugdev >/dev/null || groupadd -r plugdev
+
 %files
 %doc README.md
 %license LICENSES/GPL-2.0-or-later.txt
