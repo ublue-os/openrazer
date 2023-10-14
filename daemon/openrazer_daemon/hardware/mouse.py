@@ -307,7 +307,7 @@ class RazerAbyssus(__RazerDevice):
     """
     USB_VID = 0x1532
     USB_PID = 0x0042
-    METHODS = ['get_device_type_mouse', 'set_logo_active', 'get_logo_active', 'get_poll_rate', 'set_poll_rate']
+    METHODS = ['get_device_type_mouse', 'set_logo_none', 'set_logo_on', 'get_poll_rate', 'set_poll_rate']
 
     DEVICE_IMAGE = "https://assets.razerzone.com/eeimages/support/products/274/abyssus2014_500x500.png"
 
@@ -318,8 +318,8 @@ class RazerImperator(__RazerDevice):
     """
     USB_VID = 0x1532
     USB_PID = 0x002F
-    METHODS = ['get_device_type_mouse', 'set_logo_active', 'get_logo_active', 'max_dpi', 'get_dpi_xy', 'set_dpi_xy',
-               'get_poll_rate', 'set_poll_rate', 'set_scroll_active', 'get_scroll_active']
+    METHODS = ['get_device_type_mouse', 'max_dpi', 'get_dpi_xy', 'set_dpi_xy', 'get_poll_rate', 'set_poll_rate',
+               'set_logo_none', 'set_logo_on', 'set_scroll_none', 'set_scroll_on']
 
     DEVICE_IMAGE = "https://assets.razerzone.com/eeimages/support/products/215/215_imperator.png"
 
@@ -333,7 +333,7 @@ class RazerOuroboros(__RazerDevice):
     USB_VID = 0x1532
     USB_PID = 0x0032
     METHODS = ['get_device_type_mouse', 'max_dpi', 'get_dpi_xy', 'set_dpi_xy',
-               'get_poll_rate', 'set_poll_rate', 'set_scroll_active', 'get_scroll_active', 'get_scroll_brightness', 'set_scroll_brightness',
+               'get_poll_rate', 'set_poll_rate', 'set_scroll_none', 'set_scroll_on', 'get_scroll_brightness', 'set_scroll_brightness',
                'get_battery', 'is_charging', 'set_idle_time', 'set_low_battery_threshold']
 
     DEVICE_IMAGE = "https://assets.razerzone.com/eeimages/support/products/26/26_ouroboros.png"
@@ -347,8 +347,8 @@ class RazerOrochi2013(__RazerDevice):
     """
     USB_VID = 0x1532
     USB_PID = 0x0039
-    METHODS = ['get_device_type_mouse', 'get_dpi_xy', 'set_dpi_xy',
-               'get_poll_rate', 'set_poll_rate', 'set_scroll_active', 'get_scroll_active', 'max_dpi']
+    METHODS = ['get_device_type_mouse', 'max_dpi', 'get_dpi_xy', 'set_dpi_xy',
+               'get_poll_rate', 'set_poll_rate', 'set_scroll_none', 'set_scroll_on']
 
     DPI_MAX = 6400
 
@@ -362,10 +362,10 @@ class RazerOrochiWired(__RazerDevice):
     USB_VID = 0x1532
     USB_PID = 0x0048
     METHODS = ['get_device_type_mouse',
-               'get_scroll_brightness', 'set_scroll_brightness',
+               'get_scroll_brightness', 'set_scroll_brightness', 'set_scroll_none', 'set_scroll_on',
                'set_backlight_static', 'set_backlight_spectrum', 'set_backlight_reactive', 'set_backlight_none', 'set_backlight_breath_random',
                'set_backlight_breath_single', 'set_backlight_breath_dual', 'set_idle_time', 'set_low_battery_threshold',
-               'max_dpi', 'get_dpi_xy', 'set_dpi_xy', 'set_scroll_active', 'get_scroll_active',
+               'max_dpi', 'get_dpi_xy', 'set_dpi_xy',
                'get_poll_rate', 'set_poll_rate']
 
     DEVICE_IMAGE = "https://assets.razerzone.com/eeimages/support/products/612/612_orochi_2015.png"
@@ -396,8 +396,8 @@ class RazerDeathAdder2000(__RazerDevice):
     USB_VID = 0x1532
     USB_PID = 0x004F
     METHODS = ['get_device_type_mouse',
-               'set_logo_active', 'get_logo_active', 'get_logo_brightness', 'set_logo_brightness', 'set_logo_static_mono', 'set_logo_pulsate_mono',
-               'set_scroll_active', 'get_scroll_active', 'get_scroll_brightness', 'set_scroll_brightness', 'set_scroll_static_mono', 'set_scroll_pulsate_mono',
+               'get_logo_brightness', 'set_logo_brightness', 'set_logo_none', 'set_logo_on', 'set_logo_breath_mono',
+               'get_scroll_brightness', 'set_scroll_brightness', 'set_scroll_none', 'set_scroll_on', 'set_scroll_breath_mono',
                'max_dpi', 'get_dpi_xy', 'set_dpi_xy', 'get_poll_rate', 'set_poll_rate']
 
     DEVICE_IMAGE = "https://assets2.razerzone.com/images/da10m/carousel/razer-death-adder-gallery-09.png"
@@ -473,7 +473,7 @@ class RazerNaga2012(__RazerDevice):
     USB_PID = 0x002E
     DEDICATED_MACRO_KEYS = True
     METHODS = ['get_device_type_mouse', 'max_dpi', 'get_dpi_xy_byte', 'set_dpi_xy_byte', 'get_poll_rate', 'set_poll_rate',
-               'get_logo_active', 'set_logo_active', 'get_scroll_active', 'set_scroll_active', 'set_backlight_active', 'get_backlight_active']
+               'set_logo_none', 'set_logo_on', 'set_scroll_none', 'set_scroll_on', 'set_backlight_none', 'set_backlight_on']
 
     DEVICE_IMAGE = "https://assets.razerzone.com/eeimages/products/39/razer-naga-gallery-4.png"
 
@@ -567,7 +567,7 @@ class RazerNagaHex(__RazerDevice):
     USB_PID = 0x0041
     DEDICATED_MACRO_KEYS = True
     METHODS = ['get_device_type_mouse', 'max_dpi', 'get_dpi_xy_byte', 'set_dpi_xy_byte', 'get_poll_rate', 'set_poll_rate',
-               'get_logo_active', 'set_logo_active', 'get_scroll_active', 'set_scroll_active']
+               'set_logo_none', 'set_logo_on', 'set_scroll_none', 'set_scroll_on']
 
     DEVICE_IMAGE = "https://assets.razerzone.com/eeimages/support/products/23/23_naga_hex.png"
 
@@ -584,7 +584,7 @@ class RazerNagaHexRed(__RazerDevice):
     USB_PID = 0x0036
     DEDICATED_MACRO_KEYS = True
     METHODS = ['get_device_type_mouse', 'max_dpi', 'get_dpi_xy_byte', 'set_dpi_xy_byte', 'get_poll_rate', 'set_poll_rate',
-               'get_logo_active', 'set_logo_active', 'get_scroll_active', 'set_scroll_active']
+               'set_logo_none', 'set_logo_on', 'set_scroll_none', 'set_scroll_on']
 
     DEVICE_IMAGE = "https://assets.razerzone.com/eeimages/products/12/razer-naga-hex-gallery-12.png"
 
@@ -601,7 +601,7 @@ class RazerTaipan(__RazerDevice):
     USB_PID = 0x0034
     DEDICATED_MACRO_KEYS = True
     METHODS = ['get_device_type_mouse', 'max_dpi', 'get_dpi_xy', 'set_dpi_xy', 'get_poll_rate', 'set_poll_rate',
-               'get_logo_active', 'set_logo_active', 'get_scroll_active', 'set_scroll_active']
+               'set_logo_none', 'set_logo_on', 'set_scroll_none', 'set_scroll_on']
 
     DEVICE_IMAGE = "https://assets.razerzone.com/eeimages/support/products/19/19_taipan.png"
 
@@ -659,7 +659,7 @@ class RazerDeathAdder3_5G(__RazerDevice):
     DEDICATED_MACRO_KEYS = True
     METHODS = ['get_device_type_mouse',
                'get_poll_rate', 'set_poll_rate', 'get_dpi_xy', 'set_dpi_xy', 'available_dpi', 'max_dpi',
-               'get_logo_active', 'set_logo_active', 'get_scroll_active', 'set_scroll_active']
+               'set_logo_none', 'set_logo_on', 'set_scroll_none', 'set_scroll_on']
 
     AVAILABLE_DPI = [450, 900, 1800, 3500]
     DPI_MAX = 3500
@@ -789,7 +789,7 @@ class RazerNaga2014(__RazerDevice):
     USB_PID = 0x0040
     DEDICATED_MACRO_KEYS = True
     METHODS = ['get_device_type_mouse', 'max_dpi', 'get_dpi_xy', 'set_dpi_xy', 'get_poll_rate', 'set_poll_rate',
-               'get_logo_active', 'set_logo_active', 'get_scroll_active', 'set_scroll_active', 'set_backlight_active', 'get_backlight_active']
+               'set_logo_none', 'set_logo_on', 'set_scroll_none', 'set_scroll_on', 'set_backlight_none', 'set_backlight_on']
 
     DEVICE_IMAGE = "https://assets.razerzone.com/eeimages/support/products/227/227_razer_naga_2014.png"
 
@@ -804,8 +804,8 @@ class RazerOrochi2011(__RazerDevice):
     USB_PID = 0x0013
     EVENT_FILE_REGEX = re.compile(r'.*Razer_Orochi-if01-event-kbd')
 
-    METHODS = ['get_device_type_mouse', 'set_logo_active', 'get_logo_active', 'set_scroll_active', 'get_scroll_active',
-               'max_dpi', 'get_dpi_xy_byte', 'set_dpi_xy_byte', 'get_poll_rate', 'set_poll_rate']
+    METHODS = ['get_device_type_mouse', 'max_dpi', 'get_dpi_xy_byte', 'set_dpi_xy_byte', 'get_poll_rate', 'set_poll_rate',
+               'set_logo_none', 'set_logo_on', 'set_scroll_none', 'set_scroll_on']
 
     DEVICE_IMAGE = "https://assets.razerzone.com/eeimages/support/products/612/612_orochi_2015.png"
 
@@ -835,7 +835,7 @@ class RazerAbyssus1800(__RazerDevice):
     USB_VID = 0x1532
     USB_PID = 0x0020
     METHODS = ['get_device_type_mouse', 'max_dpi', 'get_dpi_xy_byte', 'set_dpi_xy_byte', 'get_poll_rate', 'set_poll_rate',
-               'get_logo_active', 'set_logo_active']
+               'set_logo_none', 'set_logo_on']
 
     DPI_MAX = 1800
 
@@ -849,7 +849,7 @@ class RazerAbyssus2000(__RazerDevice):
     USB_VID = 0x1532
     USB_PID = 0x005E
     METHODS = ['get_device_type_mouse', 'max_dpi', 'get_dpi_xy', 'set_dpi_xy', 'get_poll_rate', 'set_poll_rate',
-               'get_logo_active', 'set_logo_active']
+               'set_logo_none', 'set_logo_on']
 
     DPI_MAX = 2000
 
@@ -1105,7 +1105,7 @@ class RazerDeathAdder1800(__RazerDevice):
     USB_VID = 0x1532
     USB_PID = 0x0038
     METHODS = ['get_device_type_mouse', 'max_dpi', 'get_dpi_xy_byte', 'set_dpi_xy_byte', 'get_poll_rate', 'set_poll_rate',
-               'get_logo_active', 'set_logo_active']
+               'set_logo_none', 'set_logo_on']
 
     DPI_MAX = 1800
 
@@ -1758,6 +1758,51 @@ class RazerViperV2ProWireless(RazerViperV2ProWired):
     """
 
     USB_PID = 0x00A6
+
+
+class RazerCobraPro(__RazerDevice):
+    """
+    Class for the Razer Cobra Pro
+    """
+    EVENT_FILE_REGEX = re.compile(r'.*usb-Razer_Razer_Cobra_Pro-if0(1|2)-event-kbd')
+
+    USB_VID = 0x1532
+    USB_PID = 0x00B0
+
+    METHODS = ['get_device_type_mouse',
+               'max_dpi', 'get_dpi_xy', 'set_dpi_xy', 'get_dpi_stages', 'set_dpi_stages',
+               'get_poll_rate', 'set_poll_rate',
+               'get_brightness', 'set_brightness',
+               'get_logo_brightness', 'set_logo_brightness',
+               'get_scroll_brightness', 'set_scroll_brightness',
+               # All LEDs (partial support)
+               'set_static_effect', 'set_wave_effect', 'set_spectrum_effect', 'set_none_effect',
+               # Logo (partial support)
+               'set_logo_wave', 'set_logo_static', 'set_logo_spectrum', 'set_logo_none',
+               # Scroll wheel (partial support)
+               'set_scroll_wave', 'set_scroll_static', 'set_scroll_spectrum', 'set_scroll_none',
+               # Battery
+               'get_battery', 'is_charging', 'get_idle_time', 'set_idle_time', 'set_low_battery_threshold']
+
+    DEVICE_IMAGE = "https://dl.razerzone.com/src2/13182/13182-1-en-v2.png"
+
+    DPI_MAX = 30000
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+
+        self._battery_manager = _BatteryManager(self, self._device_number, 'Razer Cobra Pro')
+        self._battery_manager.active = self.config.getboolean('Startup', 'battery_notifier', fallback=False)
+        self._battery_manager.frequency = self.config.getint('Startup', 'battery_notifier_freq', fallback=10 * 60)
+        self._battery_manager.percent = self.config.getint('Startup', 'battery_notifier_percent', fallback=33)
+
+    def _close(self):
+        """
+        Close the key manager
+        """
+        super()._close()
+
+        self._battery_manager.close()
 
 
 class RazerDeathAdderV3(__RazerDevice):
