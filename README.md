@@ -169,6 +169,7 @@ This will output something similar to this:
 | Razer Blade 14 (2025)                                         |  1532:02C5  |
 | Razer Blade 16 (2025)                                         |  1532:02C6  |
 | Razer Blade 18 (2025)                                         |  1532:02C7  |
+| Razer Huntsman V3 Pro 8KHz                                    |  1532:02CF  |
 | Razer BlackWidow V4 Tenkeyless HyperSpeed (Wireless)          |  1532:02D5  |
 | Razer BlackWidow V4 Tenkeyless HyperSpeed (Wired)             |  1532:02D7  |
 | Razer BlackWidow V3 Tenkeyless                                |  1532:0A24  |
@@ -307,6 +308,7 @@ This will output something similar to this:
 | Razer Kraken 7.1 Chroma                                       |  1532:0504  |
 | Razer Kraken 7.1                                              |  1532:0506  |
 | Razer Kraken 7.1 V2                                           |  1532:0510  |
+| Razer Kraken Tournament Edition                               |  1532:0520  |
 | Razer Kraken Ultimate                                         |  1532:0527  |
 | Razer Kraken Kitty Edition V2                                 |  1532:0560  |
 | Razer Kraken Kitty Edition                                    |  1532:0F19  |
