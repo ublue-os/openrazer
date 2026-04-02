@@ -287,6 +287,8 @@ This will output something similar to this:
 | Razer Basilisk V3 Pro 35K (Wireless)                          |  1532:00CD  |
 | Razer Pro Click V2 (Wired)                                    |  1532:00D0  |
 | Razer Pro Click V2 (Wireless)                                 |  1532:00D1  |
+| Razer Basilisk Mobile (Wired)                                 |  1532:00D3  |
+| Razer Basilisk Mobile (Receiver)                              |  1532:00D4  |
 | Razer Basilisk V3 Pro 35K Phantom Green Edition (Wired)       |  1532:00D6  |
 | Razer Basilisk V3 Pro 35K Phantom Green Edition (Wireless)    |  1532:00D7  |
 
@@ -334,6 +336,7 @@ This will output something similar to this:
 | Razer Chroma Hardware Development Kit (HDK)                   |  1532:0F09  |
 | Razer Laptop Stand Chroma                                     |  1532:0F0D  |
 | Razer Raptor 27                                               |  1532:0F12  |
+| Lian Li O11 Dynamic - Razer Edition                           |  1532:0F13  |
 | Razer Tomahawk ATX                                            |  1532:0F17  |
 | Razer Core X Chroma                                           |  1532:0F1A  |
 | Razer Mouse Bungee V3 Chroma                                  |  1532:0F1D  |
